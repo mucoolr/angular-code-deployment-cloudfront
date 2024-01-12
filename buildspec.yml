@@ -4,12 +4,12 @@ phases:
   install:
     runtime-versions:
       nodejs: 18.x
-    commands:
-      - echo install process started
-      - npm install && npm install -g @angular/cli
+
   build:
     commands:
-      - echo build process started now
+      - echo install process started
+      - npm install 
+      - npm install -g @angular/cli    
       - ng build
       - echo build process finished, we should uplload to S3 now
       - cd dist/
