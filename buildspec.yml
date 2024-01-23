@@ -8,7 +8,7 @@ phases:
   build:
     commands:
       - echo install process started
-      - npm install node-sass @
+      - npm install node-sass@
       - npm install 
       - npm install -g @angular/cli    
       - ng build
